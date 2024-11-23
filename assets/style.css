@@ -1,72 +1,169 @@
-h1, h2, p{
-  text-align:center;
+@import url('https://fonts.googleapis.com/css2?family=Nova+Round&family=Quicksand:wght@300..700&display=swap');
+
+
+*{
+    margin:0;
 }
-.menu{
-  background-color:#dbad84;
-  width: 70%;
-  margin:auto;
-  max-width: 50%;
-  border-radius:20px;
-  padding:2px;
+:root {
+    --color-nav-footer: #02121F;
+    --color-background: #FEFAE0;
+    --font-black: #111111;
+    --font-white:#f5f4ed;
+    --cards: #afca74;
+    --buttons: #B1C29E;
 }
+
 body{
-  background-image:url(/assets/img/background_image.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-color: var(--color-background);
 }
-.item{
-  display: flex;
-  margin-left:30px;
-  margin-right:30px;
-  justify-content: space-between;
-}
-.item p{
-  margin-top:5px;
-  margin-bottom:5px;
-  font-size:18px
-}
-h1, h2{
-  font-family:Impact, serif;
-}
-.style{
-  font-style:italic;
-}
-h1{
-  font-size:40px;
-}
-h2{
-  font-size:30px;
-}
-hr{
-  background-color:rgb(56, 34, 16);
-  border-color: rgb(56, 34, 16);
-  width:88%;
-  height: 2px;
+a{
+    text-decoration: none;
 }
 
-/*FOOTER*/
+/*navigation-bar*/
+.navegation-bar{
+    display:flex;
+    align-items:center;
+    padding:30px;
+    padding-left:60px;
+    background-color: var(--color-nav-footer);
+    border-bottom-right-radius: 90%;
+    -webkit-box-shadow: 0px 34px 64px 12px rgba(0,0,0,0.38);
+    -moz-box-shadow: 0px 34px 64px 12px rgba(0,0,0,0.38);
+    box-shadow: 0px 34px 64px 12px rgba(0,0,0,0.38);
+}
+.logotipo{
+    color:var(--font-white);
+    padding-left: 10px;
+    font-family: "Quicksand", sans-serif;
+}
+.logo{
+    width:40px;
+}
 
+/*Card projects*/
+.introduction{
+    color:var(--font-black);
+    font-family: "Quicksand", sans-serif;
+    padding: 20px;
+    padding-right:60px;
+    font-weight: 500;
+}
+.sub-section{
+    box-sizing: border-box;
+    margin-right:250px;
+}
+.text-media-introduc{
+    font-size: small;
+    font-weight: 500;
+
+}
+.medias{
+    margin:20px;
+    background-color: var(--cards);
+    border-radius: 20px;
+    padding: 10px;
+
+    .row-media{
+        display:flex;
+        justify-items: flex-start;
+    }
+    .row-media, p, a{
+        color:var(--font-black);
+    }
+    .media-image{
+        width: 30px;
+        height: 30px;
+        margin:5px;
+    }
+    .media-text{
+        margin:10px;
+    }
+}
+
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    margin:40px;
+    
+}
+.photo-status{
+    width:50px;
+    clip-path: circle(50%);
+    margin-bottom: 20px;
+}
+.containers{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin:40px;
+
+}
+
+/*Projects*/
+.project{
+    display: flex;
+    background-color: var(--cards);
+    height:170px;
+    width:250px;
+    margin-left:20px;
+    margin-bottom:20px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    align-content: center;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    img{
+        width:auto;
+        height:170px;
+        border-top-left-radius: 14px;
+        border-bottom-left-radius: 14px;
+    }
+    .text-card{
+        margin:10px;
+        margin-bottom:10px;
+        font-family: "Quicksand", sans-serif;
+        color:var(--font-black);
+    }
+    p{
+        font-weight:500;
+    }
+}
+
+.languages{
+    display:flex;
+    justify-content: flex-end;
+    margin:10px;
+    box-sizing: border-box;
+    img{
+        width:30px;
+        height:30px;
+        margin-top:10px;
+    }
+}
+
+
+/* footer */
 footer{
-  font-size:14px;
-}
-a:visited {
-  color: grey;
-}
-a:hover{ 
-  color:brown;
-}
-a:active {  
-  color:white;
-  }
-.grao{
-  width: 35px;
-  display:block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.pie{
-  width: 40px;
-  display:block;
-  margin-left: auto;
-  margin-right: auto;
+    background-color: var(--color-nav-footer);
+    height:120px;
+    width:100%;
+    border-top-left-radius: 80%;
+    box-sizing: border-box;
+    display:flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: space-evenly;
+    -webkit-box-shadow: 0px -13px 64px 12px rgba(0,0,0,0.38);
+    -moz-box-shadow: 0px -13px 64px 12px rgba(0,0,0,0.38);
+    box-shadow: 0px -13px 64px 12px rgba(0,0,0,0.38);
+    hr{
+        width:80%;
+        margin-left:40px;
+        margin-right:40px;
+        border-bottom: 1px white;
+    }
+    p, a{
+        color:white;
+        margin:10px;
+    }
 }
