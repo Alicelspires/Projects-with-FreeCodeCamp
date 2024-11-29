@@ -5,11 +5,11 @@
     margin:0;
 }
 :root {
-    --color-nav-footer: #02121F;
-    --color-background: #FEFAE0;
+    --color-nav-footer: #152C34;
+    --color-background: #0B1E27;
     --font-black: #111111;
     --font-white:#f5f4ed;
-    --cards: #afca74;
+    --cards: #C6AB74;
     --buttons: #B1C29E;
 }
 
@@ -28,9 +28,7 @@ a{
     padding-left:60px;
     background-color: var(--color-nav-footer);
     border-bottom-right-radius: 90%;
-    -webkit-box-shadow: 0px 34px 64px 12px rgba(0,0,0,0.38);
-    -moz-box-shadow: 0px 34px 64px 12px rgba(0,0,0,0.38);
-    box-shadow: 0px 34px 64px 12px rgba(0,0,0,0.38);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 .logotipo{
     color:var(--font-white);
@@ -43,7 +41,7 @@ a{
 
 /*Card projects*/
 .introduction{
-    color:var(--font-black);
+    color:var(--font-white);
     font-family: "Quicksand", sans-serif;
     padding: 20px;
     padding-right:60px;
@@ -106,23 +104,28 @@ a{
     background-color: var(--cards);
     height:170px;
     width:250px;
+    border-style: solid;
+    border-color:#C6AB74;
     margin-left:20px;
     margin-bottom:20px;
     border-radius: 15px;
     box-sizing: border-box;
     align-content: center;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
     img{
         width:auto;
-        height:170px;
-        border-top-left-radius: 14px;
-        border-bottom-left-radius: 14px;
+        height:164px;
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
     }
     .text-card{
         margin:10px;
         margin-bottom:10px;
         font-family: "Quicksand", sans-serif;
         color:var(--font-black);
+        h3{
+            
+        }
     }
     p{
         font-weight:500;
@@ -153,9 +156,7 @@ footer{
     flex-wrap: wrap;
     align-content: flex-end;
     justify-content: space-evenly;
-    -webkit-box-shadow: 0px -13px 64px 12px rgba(0,0,0,0.38);
-    -moz-box-shadow: 0px -13px 64px 12px rgba(0,0,0,0.38);
-    box-shadow: 0px -13px 64px 12px rgba(0,0,0,0.38);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
     hr{
         width:80%;
         margin-left:40px;
