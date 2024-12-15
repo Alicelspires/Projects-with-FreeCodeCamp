@@ -43,13 +43,13 @@ a{
 .introduction{
     color:var(--font-white);
     font-family: "Quicksand", sans-serif;
-    padding: 20px;
-    padding-right:60px;
+    padding-right:40px;
+    margin-top:40px;
     font-weight: 500;
 }
 .sub-section{
     box-sizing: border-box;
-    margin-right:250px;
+    justify-items: center;
 }
 .text-media-introduc{
     font-size: small;
@@ -82,20 +82,20 @@ a{
 .content{
     display: flex;
     justify-content: space-evenly;
-    margin:40px;
+    margin-left:60px;
 }
 .photo-status{
     width:50px;
     clip-path: circle(50%);
     margin-bottom: 20px;
 }
-.containers{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin:40px;
-}
 /*Projects*/
+.containers{
+    display: grid;
+    margin:40px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .project{
     display: flex;
     background-color: var(--cards);
@@ -131,10 +131,12 @@ a{
     }
 }
 
-/*.project:hover > :not(:hover){
-    filter:blur(3px);
-    opacity:0.5;
-}*/
+.project:hover{
+    background-color: var(--color-nav-footer);
+    .text-card:hover{
+        color:white;
+    }
+}
 
 .languages{
     display:flex;
