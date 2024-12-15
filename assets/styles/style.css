@@ -10,6 +10,7 @@
     --font-black: #111111;
     --font-white:#f5f4ed;
     --cards: #C6AB74;
+    --cards-hover:#e2c88f;
     --buttons: #B1C29E;
 }
 
@@ -132,10 +133,9 @@ a{
 }
 
 .project:hover{
-    background-color: var(--color-nav-footer);
-    .text-card:hover{
-        color:white;
-    }
+    background-color: var(--cards-hover);
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.35);
 }
 
 .languages{
