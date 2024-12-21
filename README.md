@@ -13,4 +13,4 @@ Interesting projects created with the Free Code Camp course of HTML and CSS. Som
 
 ## Introduction page -- 🚧 building...
 
-![page 07](https://github.com/user-attachments/assets/691b3f56-4382-4a52-b4bf-d0cf542c7c04)
+![index html_screeshot](https://github.com/user-attachments/assets/100c0fda-8f9d-4814-8c1f-527eb0826c5e)
