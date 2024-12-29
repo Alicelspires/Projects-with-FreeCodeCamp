@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Round&family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin:0;
+}
+:root {
+    --color-nav-footer: #377478;
+    --color-background: #10375C;
+    --font-black: #111111;
+    --font-white:#f5f4ed;
+    --gradient: #EB8317;
+}
+body{
+    background-color: var(--color-background);
+    margin:0;
+    width:100%;
+    font-family: "Quicksand", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+/*Navbar ----------------------------------------*/
+.header {
+    width:auto;
+    color:white;
+    padding:15px;
+    background-color: var(--color-nav-footer);
+    nav{
+        align-items: center;
+        display:flex;
+        justify-content: space-between;
+        align-content: center;
+
+    }
+    .home{
+        display:flex;
+    }
+
+    .logotipo{
+        color:var(--font-white);
+        font-family: "Quicksand", sans-serif;
+        margin:15px;
+        font-size: 1.2em;
+    }
+
+    .logo-icone{
+        width:40px;
+        height:40px;
+        margin:0 10px;
+    }
+}
+
+/* cards---------------------------------*/
+
+.container{
+    background
+}
